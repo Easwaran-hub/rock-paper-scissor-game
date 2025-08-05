@@ -1,0 +1,69 @@
+ <html>
+    <head>
+    <title>ROCK PAPER SCISSOR</title>
+    <link rel="icon" href="confrontation.svg" type="image/x-icon">
+    </head>
+    <body style="background-image: url('background img.jpg');
+                background-size:contain;
+                background-repeat:round;
+                background-blend-mode:overlay;
+                background-blend-mode: lighten;
+                ">
+        <h1 style="text-align: center;
+                font-family: 'Orbitron', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                text-shadow: 0cm 0.2cm 0.2cm rgba(0, 0, 0, 0.521);
+                -webkit-text-fill-color: rgb(136, 119, 136);
+                text-indent: 0cm;
+        "> ROCK PAPER SCISSOR PLAY PANNALAMA</h1>
+        <form id="gameForm">
+        <table style="
+        margin: 40px auto; 
+        border: 3px solid #21d4fd; 
+        border-radius: 50px; 
+        box-shadow: 0 4px 16px rgba(33, 212, 253, 0.3); 
+        background: rgba(151, 233, 199, 0.8); 
+        padding: 30px;
+        width: 500px;
+        text-align: center;
+        height: 500px;
+        ">
+       <tr>
+           <td>
+            
+                <label><h3 style="font-family:cursive; font-size: 25px;">ENTER UR CHOICE</h3></label>
+          
+           </td> 
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <input type="text" required style="width: 250px;height: 50px;border-radius :30px;border-style:double; align-items:center;" id="input">
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                <button type="submit"  style="width:100px;height:25px;text-align: center;">SUBMIT</button>   
+            </td>
+        </tr>
+    </table>
+    </form>
+        <div id="popup"
+         style="display:none;
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border:3px solid #21d4fd;
+            border-radius:20px;
+            text-align: center;
+            font-family:cursive;
+            font-size: 1.2em;
+            padding: 30px;
+            z-index: 1000;">
+          <span id="popup-message"></span>  
+          <br><br> 
+          <button onclick="document.getElementById('popup').style.display='none'" id="confirm">PLAY AGAIN</button>
+        </div>
+        <script src="RPS CODE.js"></script>
+    </body>
+ </html>
